@@ -65,7 +65,7 @@ function userLogin($id, $password,$userType)
 function updatePassword ($id, $nPassword)
     {
         $con = getConnection();
-        $sql = "UPDATE userInfo SET password = '$nPassword' WHERE username = '$id'";
+        $sql = "UPDATE userInfo SET password = '$nPassword' WHERE id = '$id'";
         $result = mysqli_query($con, $sql);
 
         if ($result)
