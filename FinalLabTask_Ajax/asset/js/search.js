@@ -9,10 +9,10 @@ function searchEmp() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("h1").innerHTML = this.responseText;
     }
-    else 
-    {
-      alert ("not found");
-    }
+    // else
+    // {
+    //   alert ("not found");
+    // }
   };
   xhttp.send("uname=" + username);
 }

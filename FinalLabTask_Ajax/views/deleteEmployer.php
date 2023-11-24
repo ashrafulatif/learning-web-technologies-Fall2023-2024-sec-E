@@ -1,14 +1,14 @@
 <html>
   <head>
-    <title>Add Employer</title>
+    <title>Delete Employer</title>
     <script src="../asset/js/search.js"></script>
   </head>
   <body>
-    <form action="../controller/addEmployerCheck.php" method="post" enctype="">
+    <form action="../controller/deleteEmployerCheck.php" method="post" enctype="">
       <table border="1" width="40%" height="40%">
         <tr>
           <td colspan="2">
-            <h3>Add Employer</h3>
+            <h3>Delete Employer</h3>
             <div align="right">
                 <input type="text" name="search" id="search" value=""  placeholder="Search"/>
                 <input type="button" name="search1" value="Search" onclick="searchEmp()" />
@@ -19,19 +19,6 @@
         <tr>
           <td>Employer Name</td>
           <td><input type="text" name="name" id="name" value="" /><br /></td>
-        </tr>
-        <tr>
-          <td>Company Name</td>
-          <td>
-          <input type="text" name="companyName" id="companyName" value="" />
-            <br />
-          </td>
-        </tr>
-        <tr>
-          <td>Contact no</td>
-          <td>
-          <input type="text" name="contactNum" id="contactNum" value="" />
-          </td>
         </tr>
         <tr>
           <td>Username</td>
@@ -48,7 +35,7 @@
             <input
               type="submit"
               name="submit"
-              value="submit"
+              value="Delete"
               onclick=""
             />
             <input type="reset" name="reset" value="reset" />

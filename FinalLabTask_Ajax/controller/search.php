@@ -1,6 +1,6 @@
 <?php
 
-    require_once('../model/empModel.php');
+    require_once('../model/adminModel.php');
     $username = $_REQUEST['uname'];
 
     $search = getEmployeer($username);
@@ -11,6 +11,9 @@
         echo "Employeer Company name is : ".$search['CompanyName']."<br>";
         echo "Employeer Contact no is : ".$search['ContactNo']."<br>";
         echo "Employeer Username is : ".$search['username']."<br>";
+    }
+    else{
+        echo "not found";
     }
 
 ?>

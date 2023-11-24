@@ -4,11 +4,11 @@
     <script src="../asset/js/search.js"></script>
   </head>
   <body>
-    <form action="../controller/addEmployerCheck.php" method="post" enctype="">
+    <form action="../controller/updateEmployerCheck.php" method="post" enctype="">
       <table border="1" width="40%" height="40%">
         <tr>
           <td colspan="2">
-            <h3>Add Employer</h3>
+            <h3>Update Employer</h3>
             <div align="right">
                 <input type="text" name="search" id="search" value=""  placeholder="Search"/>
                 <input type="button" name="search1" value="Search" onclick="searchEmp()" />
@@ -48,7 +48,7 @@
             <input
               type="submit"
               name="submit"
-              value="submit"
+              value="Update"
               onclick=""
             />
             <input type="reset" name="reset" value="reset" />
