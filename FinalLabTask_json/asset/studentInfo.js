@@ -14,17 +14,23 @@ function showStudentInfo() {
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       let std = JSON.parse(this.responseText);
-      document.getElementById("info").innerHTML =
-        "ID: " +
-        std[0].id +
-        "<br>Name: " +
-        std[0].name +
-        "<br>CGPA: " +
-        std[0].cgpa +
-        "<br>Program: " +
-        std[0].program +
-        "<br>Department: " +
-        std[0].department;
+      // print all the value
+      let studentInfo = "";
+      for (let i = 0; i < std.length; i++) {
+        studentInfo +=
+          "ID: " +
+          std[i].id +
+          "<br>Name: " +
+          std[i].name +
+          "<br>CGPA: " +
+          std[i].cgpa +
+          "<br>Program: " +
+          std[i].program +
+          "<br>Department: " +
+          std[i].department+"<br><hr>";
+          
+      }
+      document.getElementById("info").innerHTML = studentInfo;
     }
   };
 }
